@@ -19,7 +19,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quasi quas earum ratione quaerat aliquid laborum
         magnam odit eaque, provident quae suscipit deserunt aliquam delectus ipsum velit a adipisci maxime.</p>
 
-    <a href="www.jd.com">在新窗口打开京东</a>
+    <a href="https://www.jd.com/" target="_blank">在新窗口打开京东</a>
     <a href="mailto:xxxx@xmail.com">发邮箱</a>
     <a href="#bottom">跳到页面底部</a>
     <a href="xxxx" download="xxx.zip">下载文件</a>
@@ -33,25 +33,22 @@
 
     <marquee behavior="" direction="left">飘</marquee>
 
-    <i>这几种强调</i>
-    <b>有什么</b>
-    <strong>区别?</strong>
-    <u>这个？</u>
-    <em>这个</em>
-    <br>
+    <i>这几种强调</i><br>
+    <b>有什么</b><br>
+    <strong>区别?</strong><br>
+    <u>这个？</u><br>
+    <em>这个</em><br>
 
-    
+    &lt;!-- 注释 --&gt;
     <br>
 
     <pre>
-    <code>
-       function a() {
+     <code>
+        function a() {
             return 8
-        }
+         }
     </code>
     </pre>
-
-
 
     <hr>
 
@@ -88,24 +85,26 @@
 
     <hr>
 
-    <h2>Google搜索</h2>
-    <form action="">
-        <input type="text">
+    <form target="_blank" action="https://www.google.com/">
+        <h2>Google搜索</h2>
+        <!--https://www.google.com.hk/webhp?ie=UTF-8&sourceid=UTF-->
+        <input type="text" name="q">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input type="hidden" name="sourceid" value="UTF">
         <button>在新窗口打开搜索结果</button>
     </form>
 
-
     <hr>
-    <p>个人信息调查表</p>
+
     <form action="">
+        <p>个人信息调查表</p>
         <dl>
             <dt>性别</dt>
             <dd>
-                <input type="radio" name="gender" id="gender-male" value="male">
-                <label for="gender-male">男</label>
-                <input type="radio" name="gender" id="gender-female" value="female">
-                <label for="gender-female">女</label>
+                <input type="radio" name="gender" id="gender-male" value="male"><label for="gender-male"> 男</label>
+                <input type="radio" name="gender" id="gender-female" value="female"><label for="gender-female"> 女</label>
             </dd>
+
             <dt>年龄</dt>
             <dd>
                 <select name="age" id="">
@@ -139,7 +138,7 @@
             </dd>
             <dt>自我介绍</dt>
             <dd>
-                <textarea name="intro" cols="30" rows="10"></textarea>
+                <textarea name="intro" cols="30" rows="10">&lt;/textarea></textarea>
             </dd>
         </dl>
 
@@ -159,7 +158,6 @@
 
         <col>
         <col bgcolor="violet">
-        <col>
         <col>
         <col>
 
@@ -197,27 +195,11 @@
     </table>
     <br>
 
-    <table border="1">
-        <tbody>
-            <tr>
-                <td colspan="2">zzz</td>
-                <td rowspan="2">zzz</td>
-            </tr>
-            <tr>
-                <td rowspan="2">zzz</td>
-                <td>zzz</td>
-            </tr>
-            <tr>
-                <td colspan="2">zzz</td>
-            </tr>
-        </tbody>
-    </table>
-
     <hr>
-    <a href="https://www.mi.com">小米</a>
+    <a target="theFrame" href="https://www.mi.com/">小米</a>
     <br>
 
-    <iframe src="https://nodejs.org/en" frameborder="10" height="400"></iframe>
+    <iframe src="https://nodejs.org/en" name="theFrame" frameborder="10" height="400"></iframe>
     <div>aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbbbb</div>
     <pre>aaa      bbbbb</pre>
     >>>>>>>>>>>>>>>>>>>>>>&lt;<<<<<<<<<<<<<<<<<<&lt;span>&lt;/span>
