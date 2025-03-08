@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    * {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 1px red;
+}
+
+body {
+  margin: 0;
+}
+header {
+  xbackground-color: black;
+}
+.p1 {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.p2 {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+#d1 {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 15px;
+  font-size: 0;
+}
+#d1 > div {
+  width: 180px;
+  height: 40px;
+  border: 3px solid;
+  box-sizing: border-box;
+  display: inline-block;
+  xmargin-right: 30px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: center;
+  line-height: calc(40px - 3px * 2);
+}
+#d1 > div:nth-child(3n+1), #d1 > div:nth-child(3n+2){
+  margin-right: 30px;
+}
+#d1 > div:hover {
+  background-color: red;
+}
+.p3 {
+  width: 600px;
+  margin: auto;
+  border-bottom: 1px dotted;
+}
+.p4 {
+  width: 100vw;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <header>
+      <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste necessitatibus pariatur numquam quod nam, architecto, placeat vero non consequuntur ad, reiciendis nemo, cum eveniet laborum explicabo ex rerum reprehenderit repellat!</p>
+  </header>
+  <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique facere sequi, aut amet quae, quos numquam tenetur itaque repellendus reprehenderit dolorem officiis, minima nostrum quidem repudiandae sint et distinctio temporibus.</p>
+  <div id="d1">
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+  </div>
+  <p class="p3">lorem</p>
+  <p class="p3">lorem</p>
+  <p class="p3">lorem</p>
+  <p class="p3">lorem</p>
+  <p class="p3">lorem</p>
+  
+  <p class="p4">&copy;版权所有<br>  Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
