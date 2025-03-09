@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgba(0,0,0,0.1);
+            box-shadow: inset 0 0 1px red;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            padding: 10px 5px;
+        }
+        ul.menu li {
+            position: relative;
+        }
+        ul.menu > li {
+            display: inline-block;
+            
+        }
+        ul.menu li {
+            width: 60px;
+            text-align: center;
+        }
+        ul.menu > li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            white-space: nowrap;   
+        }
+        
+        ul.menu li:hover > ul{
+            display: block;
+        }
+        ul.menu ul ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>File
+            <ul>
+                <li>New File</li>
+                <li>Open File
+                    <ul>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c
+                            <ul>
+                                <li>111
+                                    <ul>
+                                        <li>i</li>
+                                        <li>ii</li>
+
+                                    </ul>
+                                </li>
+                                <li>222</li>
+                            </ul>
+                        </li>
+                        <li>d</li>
+                    </ul>
+                </li>
+                <li>Save</li>
+                <li>Save As</li>
+                <li>Close</li>
+            </ul>
+        </li>
+        
+        <li>Edit</li>
+        <li>Selection</li>
+        <li>View</li>
+        <li>Go</li>
+        <li>Run</li>
+        <li>Terminal</li>
+        <li>Help</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgba(0,0,0,0.1);
+            box-shadow: inset 0 0 1px red;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        div {
+            position: relative;
+            height: 100%;
+            min-width: 500px;
+        }
+        div > * {
+            overflow: scroll;
+        }
+        .left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100px;
+        }
+        .right1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+        }
+        .right2 {
+            position: absolute;
+            top: 0;
+            right: 100px;
+            bottom: 0;
+            width: 100px;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            right: 200px;
+            height: 100px;
+        }
+        main {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            right: 200px;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <aside class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus in similique accusamus itaque modi tenetur nam aliquam inventore ratione architecto esse exercitationem, a iste voluptatem? Ex eligendi, consequuntur voluptates harum pariatur officiis aperiam dicta odio porro officia commodi cum delectus eveniet soluta possimus dolor quibusdam. Doloribus eaque rerum tempora vitae cumque minima porro hic, facere libero quia voluptas, corporis ipsum earum officiis labore esse aliquam quos, ullam nisi ratione pariatur ut. Deserunt possimus debitis animi repellat consequatur a dolorem nam saepe soluta sint, dolorum velit odit error recusandae voluptatem fugiat et numquam tempore rerum magni! Numquam ipsum dolor a voluptas.</aside>
+        <header>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestias explicabo ratione quas velit incidunt voluptate repudiandae ex voluptas facilis, a ducimus exercitationem. Iure corrupti perferendis omnis ab laborum consequatur sed, rem impedit molestiae eius eaque? Ipsum neque fugiat, esse tenetur vel voluptatibus iste rerum ducimus sed placeat officia deserunt.</header>
+        <main>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod quibusdam commodi iusto deserunt ab blanditiis qui vero ex eius ullam praesentium cupiditate, voluptatum, inventore sit reprehenderit eaque libero obcaecati culpa?</main>
+        <aside class="right1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde doloribus nesciunt voluptas cumque a vitae. Necessitatibus reiciendis ipsum odio, unde aperiam tempora, assumenda libero totam veniam delectus debitis adipisci itaque! Error minima temporibus, architecto, amet quis dolore animi inventore delectus soluta hic alias? Esse, expedita rerum perferendis blanditiis quasi neque eligendi enim dignissimos aperiam beatae ipsum repellat unde quis quia reiciendis. Natus, optio ipsam vel cumque numquam corrupti commodi asperiores illo voluptatem. Provident aperiam nulla sunt. Quisquam excepturi omnis maiores, delectus sunt hic incidunt rerum eligendi itaque sit voluptate laboriosam cupiditate explicabo voluptatum vel doloribus error iste ex sapiente magnam.</aside>
+        <aside class="right2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</aside>
+    </div>
+</body>
