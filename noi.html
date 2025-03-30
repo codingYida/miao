@@ -1,0 +1,166 @@
+<script  id="ch0103/01">
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var sum = a + b
+  console.log(sum)
+</script>
+ 
+<script  id="ch0103/02">
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var c = +prompt('input c')
+  var v = (a + b) * c
+  console.log(v)
+</script>
+ 
+<script  id="ch0103/03">
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var c = +prompt('input c')
+  var v = (a + b) / c
+  console.log(v)
+</script>
+ 
+<script  id="ch0103/04">
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var c = a % b
+  var d = ( a - a % b ) / b
+  console.log(d, c)
+</script>
+ 
+<script  id="ch0103/05">
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var c = a / b
+  console.log(c.toFixed(9))
+</script>
+ 
+<script  id="ch0103/06">
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var c = b / a * 100
+  console.log(c.toFixed(3) + "%")
+</script>
+ 
+<script  id="ch0103/07">
+  var x = +prompt('input x')
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var c = +prompt('input c')
+  var d = +prompt('input d')
+  var fx = a * (x) ** 3 + b * (x) ** 2 + c * x + d
+  console.log(fx.toFixed(7))
+</script>
+ 
+<script  id="ch0103/08">
+  var f = +prompt('input f')
+  var c = 5 * (f - 32) / 9
+  console.log(c.toFixed(5))
+</script>
+ 
+<script  id="ch0103/09">
+  var r = +prompt('input r')
+  pi = 3.14159
+  var d = r * 2
+  var c = 2 * pi * r
+  var s = pi * r * r
+  console.log(d.toFixed(4), c.toFixed(4), s.toFixed(4))
+</script>
+ 
+<script  id="ch0103/10">
+  var r1 = prompt('input r1')
+  var r2 = prompt('input r2')
+  var R = 1 / ( 1 / r1 + 1 / r2)
+  console.log(R.toFixed(2))
+</script>
+ 
+
+<script id="ch0103/11">
+  var a = +prompt('input a')
+  var b = +prompt('input b')
+  var r = a % b 
+  console.log(r.toFixed(4))
+</script>
+
+<script  id="ch0103/12">
+  var r = +prompt('input r')
+  pi = 3.14
+  var V = 4 / 3 * pi * r ** 3
+  console.log(V.toFixed(2))
+</script>
+ 
+<script  id="ch0103/13">
+  var n = +prompt('输入一个三位数n')
+  var r = (n % 10 * 100) + ((n - n % 10) % 100) + ((n - n % 100) / 100)
+  console.log(r)
+</script>
+ 
+<script  id="ch0103/14">
+  var h = +prompt('输入桶深h')
+  var r = +prompt('输入半径r')
+  pi = 3.14159
+  var v = ( 20 * 1000 ) / ( pi * r * r * h )
+  var b
+  v % 1 > 0 ? b = v - v % 1 + 1 : b = v
+  console.log(b)
+</script>
+ 
+<script  id="ch0103/15">
+  var n = +prompt('苹果数：')
+  var x = +prompt('吃一个苹果的时间（小时）:')
+  var y = +prompt('经过几小时：')
+  var r
+  y <= n * x ? r = n - ( y / x ) : r = NaN
+  r % 1 > 0 ? r = r - r % 1 : r = r
+  console.log(r)
+</script>
+ 
+<script  id="ch0103/16">
+  var xa = +prompt('input xa')
+  var ya = +prompt('input ya')
+  var xb = +prompt('input xb')
+  var yb = +prompt('input yb')
+  var l = Math.sqrt((xa - xb) ** 2 + (ya - yb) ** 2)
+  console.log(l.toFixed(3))
+</script>
+ 
+<script  id="ch0103/17">
+  var x1 = +prompt('input x1')
+  var y1 = +prompt('input y1')
+  var x2 = +prompt('input x2')
+  var y2 = +prompt('input y2')
+  var x3 = +prompt('input x3')
+  var y3 = +prompt('input y3')
+  var l1 = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+  var l2 = Math.sqrt((x2 - x3) ** 2 + (y2 - y3) ** 2)
+  var l3 = Math.sqrt((x3 - x1) ** 2 + (y3 - y1) ** 2)
+  var s = (l1 + l2 + l3) / 2
+  var area = Math.sqrt(s * (s - l1) * (s - l2) * (s - l3))
+  console.log(area.toFixed(2))
+</script>
+ 
+<script  id="ch0103/18">
+  var a1 = +prompt('a1')
+  var a2 = +prompt('a2')
+  var n = +prompt('n')
+  var an
+  -100 <= a1 && a2 <= 100 && 0 < n && n <= 1000 ? an = (a2 - a1) * (n - 1) + a1 : an = NaN
+  console.log(an)
+</script>
+ 
+<script  id="ch0103/19">
+  var A = +prompt('A')
+  var B = +prompt('B')
+  var product
+  A % 1 == 0 && B % 1 == 0 && A >= 1 && B >= 1 && B <= 50000 ? product = A * B : product = ' A or B illegal'
+  console.log(product)
+</script>
+ 
+<script  id="ch0103/20">
+  var n = +prompt('input n')
+  var e
+  n >= 0 && n < 31 && n % 1 == 0 ? e = 2 ** n : e = NaN
+  console.log(e)
+</script>
+ 
