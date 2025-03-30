@@ -16,16 +16,16 @@
 <script  id="ch0103/03">
   var a = +prompt('input a')
   var b = +prompt('input b')
-  var c = +prompt('input c')
-  var v = (a + b) / c
-  console.log(v)
+  var c = +prompt('input c') 
+  var v = (a + b) / c 
+  console.log(v.toFixed(0))
 </script>
  
 <script  id="ch0103/04">
   var a = +prompt('input a')
   var b = +prompt('input b')
-  var c = a % b
-  var d = ( a - a % b ) / b
+  var r = a % b //reminder
+  var d = ( a - a % b ) / b //division
   console.log(d, c)
 </script>
  
@@ -55,8 +55,8 @@
  
 <script  id="ch0103/08">
   var f = +prompt('input f')
-  var c = 5 * (f - 32) / 9
-  console.log(c.toFixed(5))
+  var c = (5 * (f - 32) / 9).toFixed(5)
+  console.log(c)
 </script>
  
 <script  id="ch0103/09">
@@ -69,8 +69,8 @@
 </script>
  
 <script  id="ch0103/10">
-  var r1 = prompt('input r1')
-  var r2 = prompt('input r2')
+  var r1 = +prompt('input r1')
+  var r2 = +prompt('input r2')
   var R = 1 / ( 1 / r1 + 1 / r2)
   console.log(R.toFixed(2))
 </script>
@@ -92,7 +92,10 @@
  
 <script  id="ch0103/13">
   var n = +prompt('输入一个三位数n')
-  var r = (n % 10 * 100) + ((n - n % 10) % 100) + ((n - n % 100) / 100)
+  var a = (n % 10 ) 
+  var b = (n - a) % 100
+  var c = (n - a - 10 * b) / 100 % 10
+  var r = '' + a + b + c
   console.log(r)
 </script>
  
@@ -113,6 +116,7 @@
   var r
   y <= n * x ? r = n - ( y / x ) : r = NaN
   r % 1 > 0 ? r = r - r % 1 : r = r
+  //var r = Math.ceil()上取整
   console.log(r)
 </script>
  
